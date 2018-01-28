@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class People extends Component {
 
@@ -31,6 +32,7 @@ class People extends Component {
                                     <div className="card-link">Link: <a href={item.url}>View Bio</a> </div>
                                 </div>
                             </div>
+                            <Link to="ghj"/>
                         </div>
                     )
                 })}

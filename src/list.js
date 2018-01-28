@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class List extends Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class List extends Component {
                                     <div className="card-text">{item.description}</div>
                                 </div>
                             </div>
+                            <Link to={`/films/${item.id}`}>More Info</Link>
                         </div>
                     )
                 })}
